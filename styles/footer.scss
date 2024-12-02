@@ -1,0 +1,202 @@
+footer {
+  width: 100%;
+  height: 695px;
+  background-color: #111;
+  color: rgba(255, 255, 255, .6);
+  font-weight: 600;
+
+}
+
+footer .inner {
+  width: 1190px;
+  height: 695px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+footer .con1 {
+  width: 1190px;
+  height: 108px;
+  line-height: 54px;
+}
+
+footer .con1 p {
+  font-size: 32px;
+  letter-spacing: 16px;
+}
+
+footer .icon .con2>p {
+  font-size: 70px;
+  letter-spacing: -5px;
+  line-height: 1;
+
+}
+
+footer .icon {
+  width: 1190px;
+  height: 79px;
+  margin: 50px 0;
+}
+
+footer .icon .con2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer .icon ul {
+  width: 230px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 10px;
+}
+
+footer .line {
+  border-top: 4px solid #fff;
+  /* height: 73px; */
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+/* --------------------------------- */
+
+footer .inner .title {
+  font-size: 22px;
+  color: #ffffff;
+  letter-spacing: 4px;
+  padding-bottom: 15px;
+}
+
+footer .inner .text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, .4);
+}
+
+/* ---------------- */
+
+footer .inner .con3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .inner .con3 .box1 {
+  width: 671px;
+  height: 60px;
+}
+
+
+footer .con3 .box2 {
+  margin-right: 28px
+}
+
+footer .con3 .sitebox a {
+  width: 230px;
+  /* height: 88px; */
+  background: url(../images/사이트화살표.png) no-repeat right 30%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  position: relative;
+
+}
+
+footer .con3 .sitebox .family {
+  background-color: #111;
+}
+
+footer .con3 .sitebox #select-site {
+  position: absolute;
+  z-index: 999;
+}
+
+footer .con3 .sitebox #select-site>li {
+  font-weight: bold;
+}
+
+footer .con3 .sitebox #select-site li ul {
+  padding-left: 20px;
+}
+
+
+/* 
+z-index: 10;
+position: relative;
+display: table-cell;
+min-width: 230px;
+max-width: 100%;
+height: 40px;
+line-height: 1;
+vertical-align: middle;
+*/
+
+
+footer .con3 .sitebox a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+}
+
+footer .con3 .sitebox #select-site {
+  display: none;
+}
+
+/* footer .con3 .sitebox #select-site.oon{
+  display: block;
+
+}  */
+
+/* footer .con3 .sitebox:hover #select-site {    display: block;
+}  */
+
+
+
+
+
+footer .con4 {
+  width: 575px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+footer .box3 .case .text:nth-child(2) {
+  line-height: 28px;
+}
+
+footer .copy .con5 {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, .2);
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+footer .copy .con5 .box4 ul {
+  display: flex;
+  justify-content: space-between;
+  width: 272px;
+  margin-right: 245px;
+
+}
+
+footer .copy .con5 .box4 ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .2);
+  font-size: 12px;
+}
+
+
+footer .copy .con5 .box4 ul .text1::after {
+  content: "|";
+  margin-left: 7px;
+}
+
+footer .copy .con5 .box4 ul .text2::after {
+  content: "|";
+  margin-left: 7px;
+}

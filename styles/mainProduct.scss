@@ -1,0 +1,196 @@
+.product {
+  height: 895px;
+
+}
+
+.product .con1 {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 107px;
+  text-align: center;
+
+}
+
+.product .con1 p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 600;
+
+
+}
+
+.product .con1 p:nth-child(2) {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+
+/* ---------------------슬라이드---------------- */
+.product .con2 {
+  width: 100%;
+  height: 138px;
+}
+
+.product .con2 ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 54px;
+}
+
+.product .con2 li {
+  font-size: 18px;
+  color: #777;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  /* opacity: 1; */
+  width: 220px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.product .con2 li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  border-radius: 24px;
+
+}
+
+/* jquery에서 추가할 클래스 */
+.product .con2 ul li a.on {
+  background-color: #005295;
+  border-color: #005295;
+  color: #fff;
+  opacity: 1;
+}
+
+/* .product .con4,
+.con5{
+  display: none;
+} */
+
+/* .product .con4.on,
+.con5.on
+{
+  display: block;
+} */
+
+/* ----tabcontent----- */
+.tabcontent {
+  background-color: #e4f1fe;
+
+
+}
+
+.product .con3 .bx-wrapper {
+  margin: 0 auto;
+}
+
+.product .slide {
+  height: 330px;
+  position: relative;
+}
+
+.product .con3 .slider {
+  width: 1070px;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.product .con3 .slider img {
+  width: 337px;
+  height: 300px;
+}
+
+
+.product .con33 {
+  width: 100%;
+  height: 530px;
+}
+
+.product .con44 {
+  margin: 0 auto;
+  width: 1070px;
+  height: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product .con5 .con55 {
+  width: 1070px;
+  margin: 0 auto;
+  height: 530px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product .fffbox {
+  background-color: #fff;
+  color: #222;
+  width: 287px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.product .fffbox p:nth-child(1) {
+  font-size: 16px;
+}
+
+.product .fffbox p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.product .bx-viewport {
+  height: 530px !important;
+}
+
+.bx-wrapper {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+  height: 530px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  width: 32px;
+  height: 57px;
+  margin-top: -22px;
+}
+
+.bx-wrapper .bx-prev {
+  background: url(../images/슬라이드화살표왼쪽.png) no-repeat center;
+  background-size: 32px 57px;
+  position: absolute;
+  left: -80px;
+}
+
+.bx-wrapper .bx-next {
+  background: url(../images/슬라이드화살표오른쪽.png) no-repeat center;
+  background-size: 32px 57px;
+  right: -80px;
+}
+
+.bx-wrapper .bx-next:focus,
+.bx-wrapper .bx-next:hover {
+  background-position: center;
+}

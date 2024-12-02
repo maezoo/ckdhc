@@ -1,0 +1,79 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body ul li {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 9;
+}
+
+.header .inner {
+  height: 56px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.header .logo {
+  padding-top: 10px;
+}
+
+.inner nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------- */
+
+.header .inner nav {}
+
+.header .inner nav .lang {
+  display: flex;
+  margin-left: 90px;
+}
+
+.header .inner nav .lang li:nth-child(1) {
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.header .inner nav .lang li:nth-child(2) {
+  font-size: 14px;
+  border-left: 1px solid white;
+  padding: 0 16px;
+}
+
+
+
+
+/* ------------- */
+
+
+.header .inner nav .menu {
+  display: flex;
+  align-items: center;
+}
+
+.inner nav .menu li:nth-child(1) {
+  font-size: 20px;
+  padding: 0 16px;
+}
+
+.inner nav .menu li:nth-child(2) {
+  font-size: 32px;
+  color: #fff;
+  margin-right: 8px;
+  letter-spacing: 1.5px;
+}
+
+
+.inner nav .menu li:nth-child(3) {
+  margin-top: 7px;
+}
