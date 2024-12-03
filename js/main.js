@@ -30,17 +30,19 @@ $(document).ready(function () {
   })
 
 
-  $(".slide2").bxSlider({
+  $(".blue-imgs").bxSlider({
     mode: "horizontal",
-    pager: false, //'true'가 보이는 기본값 
+    pager: false,
     controls: false,
     auto: true,
-    speeSe: 1000,
-    slideWidth: 715,
-    slideMargin: 0,
-    maxSlides: 1,
-    minSlides: 1,
-    moveSlides: 1,
+    speeSe: 500,
+    // speed: 500,
+    // slideWidth: 701,
+    // slideWidth: 715,
+    // slideMargin: 0,
+    // maxSlides: 1,
+    // minSlides: 1,
+    // moveSlides: 1,
     infinitelLoop: true,
   })
 

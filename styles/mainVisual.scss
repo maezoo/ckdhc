@@ -1,138 +1,255 @@
 .visual {
-  // margin: 0 auto;
-}
-
-.visual-inner {
-  // background-color: #005295;
-  background-color: green;
-  width: 1400px;
+  background-color: #005295;
   height: 922px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  // padding-top: 1px;
-  // position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  position: relative;
+
+  .visual-inner {
+    color: white;
+    max-width: 1400px;
+    width: 1400px;
+    height: 100%;
+  }
 }
 
-.title-1 {
-  width: 1400px;
-  font-size: 70px;
-  font-weight: 600;
-  margin: 169px auto 120px;
-  color: #fff;
-  letter-spacing: -2px;
+header {
+  position: absolute; /////////////// 질문
+  background-color: purple;
 
-  .text1 {
-    font-size: 80px;
-    color: #fff;
-    margin-top: -3px;
+  .header-inner {
+    max-width: 1400px; ////////////// 질문
+    width: 1400px; /////////////// 질문
+
+
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .logo {
+      margin-bottom: 3px;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
-}
-
-
-
-/* --------------------------------------------------------------- */
-
-
-.title-2 {
-  display: flex;
-  text-align: center;
-
-  .textBox {
-    color: white;
+  nav {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    align-items: flex-end;
 
-    .k-b-s {
+    .lang {
+      font-size: 14px;
       display: flex;
-      flex-direction: column;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
+      padding-right: 20px;
 
-    .section-tit {
-      font-size: 30px;
-      font-weight: 600;
-      opacity: 30%;
-    }
+      li:nth-child(1) {
+        padding: 0 16px;
+      }
 
-    .stat-num {
-      font-size: 65px;
-      font-weight: 600;
-      color: white;
-
-      span {
-        font-size: 55px;
+      li:nth-child(2) {
+        border-left: 1px solid white;
+        padding: 0 16px;
       }
     }
 
-    .mid-line1 {
-      width: 233px;
-      height: 4px;
-      background-color: white;
-    }
-
-    .mid-line {
-      width: 233px;
-      height: 4px;
-      background-color: white;
-      opacity: 50%;
-    }
-
-    .subtitle {
-      font-size: 18px;
+    .menu {
+      font-weight: 600;
       display: flex;
-      flex-direction: column;
-      gap: 15px;
-      opacity: 80%;
+      align-items: center;
+      gap: 8px;
+
+      li:nth-child(1) {
+        font-size: 20px;
+        margin-right: 8px;
+      }
+
+      li:nth-child(2) {
+        font-size: 32px;
+        letter-spacing: 1.5px;
+      }
     }
-
-    .detail {
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      opacity: 80%;
-    }
-
-
   }
 }
 
-/* --------------------------------------------------------------- */
-/* --------------------------------------------------------------- */
+.contents-wrapper {
+  // background-color: rgb(71, 13, 57);
+  display: flex;
+  align-items: center;
+  height: 100%;
 
-.main-slider {
-  width: 715px;
-  height: 595px;
-  position: absolute;
-  right: 245px;
-  top: 192px;
 
-  .blue {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 148px;
+    height: 100%;
+    justify-content: flex-end;
+    padding-bottom: 140px;
 
-    img {
-      width: 715px;
-      height: 596px;
-      display: block;
+    .title-1 {
+      font-weight: 600;
+      letter-spacing: -2px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .textUp-1 {
+        font-size: 70px;
+      }
+
+      .textUp-2 {
+        font-size: 80px;
+      }
     }
 
-    .bx-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    .title-2 {
+      display: flex;
+      text-align: center;
 
-    .bx-wrapper img {
-      height: 100%;
+      .textBox {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .k-b-s {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 15px;
+        }
+
+        .section-tit {
+          font-size: 30px;
+          font-weight: 600;
+          opacity: 30%;
+        }
+
+        .stat-num {
+          font-size: 65px;
+          font-weight: 600;
+          letter-spacing: -2px;
+
+
+          span {
+            font-size: 55px;
+          }
+        }
+
+        .mid-line1 {
+          width: 233px;
+          height: 4px;
+          background-color: white;
+        }
+
+        .mid-line {
+          width: 233px;
+          height: 4px;
+          background-color: white;
+          opacity: 20%;
+        }
+
+        .subtitle {
+          font-size: 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          opacity: 80%;
+          letter-spacing: -1px;
+        }
+
+        .detail {
+          font-size: 14px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          opacity: 80%;
+          letter-spacing: -1px;
+
+        }
+      }
     }
   }
 
+  // .main-slider {
+  //   width: 702px;
+  //   height: 595px;
+  //   // position: absolute;
+  //   // position: relative;
+  //   // overflow: hidden;
+  //   // position: absolute;
+  //   // right: 0;
 
+  //   img {
+  //     width: 702px;
+  //     height: 596px;
+  //     // display: block;
+  //   }
+
+
+
+  //   .bx-wrapper img {
+  //     height: 100%;
+  //   }
+
+  //   .blue-imgs {
+  //     // position: absolute;
+  //     // top: 0;
+  //     // z-index: 9999;
+  //   }
+
+  // }
+
+  .main-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* 적절한 너비 설정 */
+    // margin: 0 auto;
+
+    .slider-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      /* 프레임이 슬라이드 위에 오도록 설정 */
+      pointer-events: none;
+      /* 클릭 방지 */
+
+      // width: 704px;
+      height: 598px;
+
+      width: 100%;
+      // height: 589px;
+      //     // display: block;
+    }
+
+    .bxslider {
+      position: relative;
+      z-index: 1;
+
+      .bx-wrapper {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+      }
+
+      /* 프레임 아래에 위치 */
+      li {
+        img {
+          width: 702px;
+          height: 596px;
+          // width: 100%;
+          // display: block;
+        }
+      }
+    }
+  }
 }
