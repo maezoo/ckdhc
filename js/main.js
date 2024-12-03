@@ -1,3 +1,6 @@
+// ==============================
+// hamburgerPop =================
+
 $(document).ready(function () {
   $('.hamburger').click(function () {
     $('.lifestyle .btn').addClass('on')
@@ -20,6 +23,7 @@ $(document).ready(function () {
   })
 
 
+
   $('.btn .xxx').click(function (e) {
     e.preventDefault()
     $('.lifestyle .btn').removeClass('on')
@@ -29,6 +33,8 @@ $(document).ready(function () {
     }, 1000)
   })
 
+  // ==============================
+  // ==============================
 
   $(".blue-imgs").bxSlider({
     mode: "horizontal",
@@ -58,22 +64,23 @@ $(document).ready(function () {
     moveSlides: 1,
   })
 
+  // ===============================
+  // product slide =================
 
-  $('.product .con2 ul li').click(function (e) {
+  $('.tab-btn li').click(function (e) {
     e.preventDefault()
-    $('.product .con2 ul li a').removeClass('on')
+    $('.tab-btn a').removeClass('on')
     $(this).find('a').addClass('on')
 
     let idx = $(this).index()
-    $('.tabcontent > *').hide()
-    $('.tabcontent > *').eq(idx).show()
+    $('.tab-content > *').hide()
+    $('.tab-content > *').eq(idx).show()
   })
-  $('.product .con2 ul li').eq(0).trigger('click')
+  $('.tab-btn li').eq(0).trigger('click')
 
 
-
-
-
+  // =========================
+  // 푸터 =====================
   $('.footer .con3 .sitebox a').hover(function () {
     $('.footer .con3 .sitebox #select-site ul').show()
 

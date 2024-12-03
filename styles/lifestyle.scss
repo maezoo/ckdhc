@@ -1,10 +1,8 @@
 .lifestyle {
   height: 555px;
-  background-color: rgb(152, 39, 39);
 }
 
 .life-inner {
-  background-color: rgb(66, 229, 88);
   height: 100%;
   padding-top: 115px;
   width: 1400px;
@@ -13,22 +11,6 @@
   flex-direction: column;
   gap: 60px;
   align-items: center;
-}
-
-.business {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-
-  p:nth-child(1) {
-    font-weight: 600;
-    font-size: 40px;
-  }
-
-  p:nth-child(2) {
-    font-size: 24px;
-  }
 }
 
 .circle {

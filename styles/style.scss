@@ -1,11 +1,11 @@
 @use "./reset.scss";
 @use "./header.scss";
-@use "./mainVisual.scss";
-@use "./mainProduct.scss";
-@use "./mainLifestyle.scss";
-@use "./mainHealth.scss";
-@use "./mainTV.scss";
-@use "./mainBanner.scss";
+@use "./visual.scss";
+@use "./product.scss";
+@use "./lifestyle.scss";
+@use "./health.scss";
+@use "./tv.scss";
+@use "./banner.scss";
 @use "./footer.scss";
 @use "./hamburgerPop.scss";
 
@@ -38,3 +38,30 @@ main {
 }
 
 // =================================== 
+
+.section-tit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  p:nth-child(1) {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  p:nth-child(2) {
+    font-size: 24px;
+  }
+}
+
+// =================================== 
+/* jquery에서 추가할 클래스 */
+// =================================== 
+
+.tab-btn a.on {
+  background-color: #005295;
+  border-color: #005295;
+  color: #fff;
+  opacity: 1;
+}
