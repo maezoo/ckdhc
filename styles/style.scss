@@ -59,9 +59,8 @@ main {
 /* jquery에서 추가할 클래스 */
 // =================================== 
 
-.tab-btn a.on {
+.tab-btn li.active {
   background-color: #005295;
   border-color: #005295;
   color: #fff;
-  opacity: 1;
 }
