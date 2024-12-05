@@ -1,6 +1,4 @@
-.product {
-  // height: 895px;
-}
+.product {}
 
 .tit-wrapper {
   display: flex;
@@ -14,9 +12,6 @@
     display: flex;
     gap: 40px;
     justify-content: center;
-    // height: 138px;
-    // width: 100%;
-    // padding-top: 54px;
     cursor: pointer;
 
     li {
@@ -25,29 +20,20 @@
       height: 50px;
       border: 1px solid #ccc;
       line-height: 46px;
-      // text-align: right;
       text-align: center;
+      position: relative;
     }
 
     img {
-      // margin-left: 10px;
+      display: none;
+      position: absolute;
+      right: 33px;
+      top: 23px;
       width: 13px;
       height: 7px;
       animation: tabArrow 1s ease;
     }
   }
-
-  // @keyframes tabArrow {
-  //   from {
-  //     opacity: 0;
-  //     transform: translateY(0px);
-  //   }
-
-  //   to {
-  //     transform: translateY(30px);
-  //     opacity: 1;
-  //   }
-  // }
 }
 
 .tab-content {
@@ -92,17 +78,6 @@
     }
   }
 
-  .uni-effect {
-    // height: 530px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-  }
-
-  .uni-3 {
-    gap: 30px;
-  }
-
   .tab-inner {
     width: 1230px;
     position: relative;
@@ -132,62 +107,8 @@
       right: 0px;
     }
   }
+
+  .uni-3 {
+    gap: 30px;
+  }
 }
-
-
-
-
-// =====================================
-
-
-
-
-// .bx-wrapper {
-//   border: 0;
-//   background: none;
-//   box-shadow: none;
-//   margin-bottom: 0px;
-//   height: 530px;
-//   margin: 0 auto;
-
-//   .bx-viewport {
-//     height: 530px !important;
-
-//   }
-
-//   .bx-controls-direction a {
-//     width: 32px;
-//     height: 57px;
-//     margin-top: -22px;
-//   }
-
-//   .bx-prev {
-//     background: url(/images/슬라이드화살표왼쪽.png) no-repeat center;
-//     // background-size: 32px 57px;
-//     // position: absolute;
-//     left: -80px;
-//   }
-
-//   .bx-next {
-//     background: url(/images/슬라이드화살표오른쪽.png) no-repeat center;
-//     // background-size: 32px 57px;
-//     // position: absolute;
-//     right: -80px;
-//   }
-
-//   .bx-wrapper .bx-next:focus,
-//   .bx-wrapper .bx-next:hover {
-//     // background-position: center;
-//   }
-
-
-// }
-
-// .bx-wrapper .bx-next {
-//   // background-position: 0px 0px;
-// }
-
-// .bx-wrapper .bx-next:hover {
-//   // background-position: 0px 0px;
-
-// }

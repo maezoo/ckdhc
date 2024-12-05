@@ -64,3 +64,18 @@ main {
   border-color: #005295;
   color: #fff;
 }
+
+.tab-btn img.show {
+  display: block;
+  animation: tabArrow 1s ease;
+}
+
+@keyframes tabArrow {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
