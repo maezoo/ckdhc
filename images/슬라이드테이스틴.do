@@ -51,7 +51,7 @@
 
 <link rel="stylesheet" type="text/css" href="/css/pc/common.css?ver=20230119" media="all">
 <link rel="stylesheet" type="text/css" href="/css/pc/company.css?ver=20230119" media="all">
-<link rel="stylesheet" type="text/css" href="/css/pc/customer.css?ver=20230119" media="all">
+<link rel="stylesheet" type="text/css" href="/css/pc/info-detail.css?ver=20230119" media="all">
 <link rel="stylesheet" type="text/css" href="/css/pc/product.css?ver=20230119" media="all">
 <link rel="stylesheet" type="text/css" href="/css/pc/ethical.css?ver=20230119" media="all">
 <link rel="stylesheet" type="text/css" href="/css/pc/header.css?ver=20230119" media="all">

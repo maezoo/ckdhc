@@ -1,7 +1,9 @@
 .health {
-  // width: 100%;
+  width: 100%;
+  // height: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .health-inner {
@@ -84,14 +86,10 @@
 
 }
 
-// ===========================
-// ===========================
-
 .row-2 {
   display: flex;
   justify-content: space-between;
   padding-top: 17px;
-  height: 190px;
 
   .arrow-box {
     width: 388px;

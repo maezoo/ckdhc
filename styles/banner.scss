@@ -1,17 +1,23 @@
 .banner {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    padding: 55px 0;
+
 }
 
 .banner-inner {
+    margin: 0 auto;
     width: 1190px;
-    height: 187px;
-    padding-top: 60px;
+    // height: 187px;
+    // padding-top: 60px;
+
 }
 
 .banSwiper {
+
     .swiper-wrapper {
         transition-timing-function: linear;
+
     }
 
     img {
