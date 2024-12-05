@@ -1,10 +1,9 @@
 @use "./reset.scss";
 @use "./header.scss";
 @use "./visual.scss";
-@use "./product.scss";
+@use "./product_tv.scss";
 @use "./lifestyle.scss";
 @use "./health.scss";
-@use "./tv.scss";
 @use "./banner.scss";
 @use "./footer.scss";
 @use "./hamburgerPop.scss";
@@ -66,7 +65,6 @@ main {
 }
 
 .tab-btn img.show {
-  display: block;
   animation: tabArrow 1s ease;
 }
 

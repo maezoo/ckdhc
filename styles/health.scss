@@ -1,42 +1,50 @@
-/* -------------헬스앤라이프------------ */
 .health {
-  width: 1190px;
-  height: 785px;
-  margin: 0 auto;
-}
-
-.health a {
-  text-decoration: none;
-}
-
-.health>p {
-  padding: 80px 0 57px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.health a .text p {
-  color: white;
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.health .con1 .box1 {
-  width: 360px;
-  height: 73px;
-  margin: 0 auto;
+  // width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
 }
 
-.health .con1 {
-  position: relative;
+.health-inner {
+  width: 1190px;
+  padding-top: 135px;
+  display: flex;
+  gap: 65px;
+  flex-direction: column;
 }
 
-.health .con1::after {
+.row-wrapper {
+  color: white;
+
+  .row-1 {
+    height: 290px;
+    background: url(../images/종근당건강몰.jpg)no-repeat left center/120%;
+    position: relative;
+
+    a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quick-link {
+      display: flex;
+      gap: 30px;
+
+      .cart {
+        position: relative;
+        z-index: 8;
+      }
+    }
+  }
+}
+
+.row-1 a:hover img {
+  animation: shake 1s linear;
+  animation-duration: 1s;
+}
+
+.row-1::after {
   content: '';
   display: block;
   position: absolute;
@@ -48,153 +56,71 @@
   transition: all .3s;
 }
 
-.health .con1:hover::after {
+.row-1:hover::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.health .con1 a {
-  background: url(../images/종근당건강몰.jpg)no-repeat left center/120%;
-  width: 1190px;
-  height: 290px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.health .con1 a .box1 .ill1 {
-  margin-right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 8;
-}
-
-.health .inner a:hover .ill1 {
-  animation: cart 1s linear;
-}
-
-@keyframes cart {
-  from {
-    transform: rotateX(-20deg);
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
   }
 
-  to {
-    transform: rotateY(-20deg);
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
   }
 
 }
 
+// ===========================
+// ===========================
 
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+  height: 190px;
 
+  .arrow-box {
+    width: 388px;
+    height: 190px;
+    position: relative;
+  }
+}
 
-
-.health .inner a:hover .ill2 {
+.row-2 a:hover .next-arrow {
   transform: translateX(10px);
   transition: all .1s;
 }
 
-
-.health .con1 a .box1 .text p {
-  flex-flow: column nowrap;
-  text-align: center;
-  position: relative;
-  z-index: 8;
-}
-
-
-.health>.inner {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 17px;
-}
-
-.health .con1 .text p:nth-child(2) {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.health .flex1 .text {
-  width: 388px;
-  justify-content: space-around;
-  display: flex;
-  align-items: flex-end;
-  height: 190px;
-  padding: 20px 0;
-  position: relative;
-  z-index: 8;
-}
-
-/* ------------------------- */
-
-.health .con2 {
+.heal-bell {
   background: url(../images/헬스벨스토리.jpg)no-repeat center;
-  width: 388px;
-  height: 190px;
   background-size: 386px 190px;
-  display: flex;
-  justify-content: center;
-  float: left;
-  position: relative;
 }
 
-.health .con2::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all .3s;
-}
-
-.health .con2:hover::after {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* ------------------------------- */
-
-.health .con3 {
+.heal-cosmetic {
   background: url(../images/화장품2.jpg)no-repeat center;
-  width: 388px;
-  height: 190px;
   background-size: 386px 190px;
-  display: flex;
-  justify-content: center;
-  float: left;
-  position: relative;
 }
 
-.health .con3::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all .3s;
-}
-
-.health .con3:hover::after {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.health .con4 {
+.heal-processed {
   background: url(../images/가공식품.jpg)no-repeat center;
-  width: 388px;
-  height: 190px;
   background-size: 386px 190px;
-  display: flex;
-  justify-content: center;
-  float: left;
-  position: relative;
 }
 
-.health .con4::after {
+.arrow-box::after {
   content: '';
   display: block;
   position: absolute;
@@ -206,6 +132,39 @@
   transition: all .3s;
 }
 
-.health .con4:hover::after {
+.arrow-box:hover::after {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+// ===========================
+// ===========================
+
+.card-text {
+  position: relative;
+  z-index: 8;
+
+  .card-tit {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .card-sub {
+    font-size: 16px;
+  }
+}
+
+.cardTxt1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardTxt2 {
+  width: 388px;
+  height: 190px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 20px;
 }
