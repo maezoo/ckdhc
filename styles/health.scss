@@ -40,7 +40,6 @@
   }
 }
 
-
 .row-1::after {
   content: '';
   display: block;
@@ -104,27 +103,27 @@
       transform: translateX(0px);
     }
   }
-}
 
+  .next-arrow {
+    width: 100px;
+    margin-bottom: 4px;
+  }
 
-.next-arrow {
-  width: 100px;
-  margin-bottom: 4px;
-}
+  .heal-bell {
+    background: url(../images/헬스벨스토리.jpg)no-repeat center;
+    background-size: 386px 190px;
+  }
 
-.heal-bell {
-  background: url(../images/헬스벨스토리.jpg)no-repeat center;
-  background-size: 386px 190px;
-}
+  .heal-cosmetic {
+    background: url(../images/화장품2.jpg)no-repeat center;
+    background-size: 386px 190px;
+  }
 
-.heal-cosmetic {
-  background: url(../images/화장품2.jpg)no-repeat center;
-  background-size: 386px 190px;
-}
+  .heal-processed {
+    background: url(../images/가공식품.jpg)no-repeat center;
+    background-size: 386px 190px;
+  }
 
-.heal-processed {
-  background: url(../images/가공식품.jpg)no-repeat center;
-  background-size: 386px 190px;
 }
 
 .arrow-box::after {
