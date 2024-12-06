@@ -1,51 +1,58 @@
 // ==============================
-// ==============================
-const siteCase = document.querySelector('.sitecase'); // .sitecase 전체 선택
-const selectSite = document.querySelector('.select-site'); // .select-site 선택
-
-// 마우스가 siteCase 안으로 들어올 때
-siteCase.addEventListener('mouseenter', () => {
-  selectSite.classList.add('visible'); // visible 클래스 추가
-});
-
-// 마우스가 siteCase 밖으로 나갈 때
-siteCase.addEventListener('mouseleave', () => {
-  selectSite.classList.remove('visible'); // visible 클래스 제거
-});
-// ==============================
 // hamburgerPop =================
-
 $(document).ready(function () {
-  $('.hamburger').click(function () {
-    $('.lifestyle .btn').addClass('on')
-    $('.lifestyle .btnbox').addClass('on')
-    $('.hamburger').animate({
-      opacity: 0,
-    }, 1000)
-  })
 
+  //스크롤 ===========
   $(window).scroll(function () {
-    $('.lifestyle .btn').removeClass('on')
-    $('.lifestyle .btnbox').removeClass('on')
-
-    //조건(pagestart의 떨어진 거리보다 윈도우 스크롤한 양이 같거나 크면)
+    $('.hamburgerPop').removeClass('show')
     if ($(this).scrollTop() > 700) {
-      $('.lifestyle .hamburger').fadeIn()
+      $('.sqa-btn').fadeIn()
     } else {
-      $('.lifestyle .hamburger').fadeOut()
+      $('.sqa-btn').fadeOut()
     }
   })
 
+  // 엑스 누르면 꺼지고 버튼도 나오는데
+  // 스크롤 내려서 꺼질 때 버튼은 안 나옴 
 
 
-  $('.btn .xxx').click(function (e) {
+
+
+
+
+
+  // ===========
+  $('.sqa-btn').click(function () {
+    $('.hamburgerPop').addClass('show')
+    $('.sqa-btn').animate({
+      opacity: 0,
+    }, 500)
+  })
+
+  // 팝업 close===========
+  $('.close-x').click(function (e) {
     e.preventDefault()
-    $('.lifestyle .btn').removeClass('on')
-    $('.lifestyle .btnbox').removeClass('on')
-    $('.hamburger').animate({
+    $('.hamburgerPop').removeClass('show')
+    $('.sqa-btn').animate({
       opacity: 1,
     }, 1000)
   })
+
+
+  // ==============================
+  // ==============================
+  const siteCase = document.querySelector('.sitecase'); // .sitecase 전체 선택
+  const selectSite = document.querySelector('.select-site'); // .select-site 선택
+
+  // 마우스가 siteCase 안으로 들어올 때
+  siteCase.addEventListener('mouseenter', () => {
+    selectSite.classList.add('visible'); // visible 클래스 추가
+  });
+
+  // 마우스가 siteCase 밖으로 나갈 때
+  siteCase.addEventListener('mouseleave', () => {
+    selectSite.classList.remove('visible'); // visible 클래스 제거
+  });
 
   // ==============================
   // ==============================
