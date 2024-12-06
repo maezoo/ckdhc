@@ -1,6 +1,5 @@
 .health {
   width: 100%;
-  // height: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
@@ -41,10 +40,6 @@
   }
 }
 
-.row-1 a:hover img {
-  animation: shake 1s linear;
-  animation-duration: 1s;
-}
 
 .row-1::after {
   content: '';
@@ -54,7 +49,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all .3s;
 }
 
@@ -62,28 +57,23 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.row-1:hover .cart {
+  animation: shake 1s linear;
+  animation-duration: .3s;
+}
 
 @keyframes shake {
   0% {
     transform: rotate(0deg);
   }
 
-  25% {
-    transform: rotate(5deg);
-  }
-
   50% {
-    transform: rotate(-5deg);
-  }
-
-  75% {
-    transform: rotate(5deg);
+    transform: rotate(-10deg);
   }
 
   100% {
     transform: rotate(0deg);
   }
-
 }
 
 .row-2 {
@@ -92,8 +82,6 @@
   padding-top: 17px;
 
   .arrow-box {
-    width: 388px;
-    height: 190px;
     position: relative;
   }
 
@@ -121,6 +109,7 @@
 
 .next-arrow {
   width: 100px;
+  margin-bottom: 4px;
 }
 
 .heal-bell {
@@ -146,16 +135,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all .3s;
 }
 
 .arrow-box:hover::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-// ===========================
-// ===========================
 
 .card-text {
   position: relative;
@@ -179,10 +165,10 @@
 }
 
 .cardTxt2 {
-  width: 388px;
+  width: 387px;
   height: 190px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 28px;
+  padding: 0 29px 27px;
 }
