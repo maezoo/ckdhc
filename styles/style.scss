@@ -77,3 +77,8 @@ main {
     transform: translateY(0px);
   }
 }
+
+.select-site.visible {
+  opacity: 1;
+  visibility: visible;
+}
