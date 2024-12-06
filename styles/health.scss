@@ -96,11 +96,31 @@
     height: 190px;
     position: relative;
   }
+
+  a:hover {
+    .next-arrow {
+      animation: moveRight .3s linear;
+    }
+  }
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0px);
+    }
+
+    50% {
+      transform: translateX(10px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
 }
 
-.row-2 a:hover .next-arrow {
-  transform: translateX(10px);
-  transition: all .1s;
+
+.next-arrow {
+  width: 100px;
 }
 
 .heal-bell {
@@ -164,5 +184,5 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
 }
