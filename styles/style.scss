@@ -39,15 +39,25 @@ main {
 }
 
 // =================================== 
-// .pop-up.show {
-//   right: 0;
-// }
 
 
 .hamburgerPop.show {
   opacity: 1;
   visibility: visible;
 }
+
+// .pop-inner {
+//   transform: translateX(0%);
+// }
+
+// .hamburgerPop.hidden {
+//   opacity: 0;
+//   visibility: hidden;
+
+//   .pop-inner {
+//     transform: translateX(100%);
+//   }
+// }
 
 // =================================== 
 
