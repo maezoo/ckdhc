@@ -18,7 +18,7 @@
 }
 
 .hamburgerPop {
-  // transition: opacity 0.5s ease, visibility 0.5s ease;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
   opacity: 0;
   visibility: hidden;
   width: 100%;
@@ -30,9 +30,8 @@
   justify-content: flex-end;
 
   .pop-inner {
-    // transform: translateX(-38.5%);
-    // transition: transform 0.5s ease;
-
+    transform: translateX(100%);
+    transition: transform .5s ease;
     padding: 72px 106px 0px 97px;
     background: #004a98;
     height: 100%;
@@ -50,6 +49,12 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
+
+      li {
+        &:hover {
+          color: #fff;
+        }
+      }
     }
   }
 }

@@ -150,15 +150,13 @@ prevBtn.style.display = 'block';
 
 // ====================================
 // 푸터 family site =====================
-const siteCase = document.querySelector('.sitecase'); // .sitecase 전체 선택
-const selectSite = document.querySelector('.select-site'); // .select-site 선택
+const siteCase = document.querySelector('.sitecase');
+const selectSite = document.querySelector('.select-site');
 
-// 마우스가 siteCase 안으로 들어올 때
 siteCase.addEventListener('mouseenter', () => {
-  selectSite.classList.add('visible'); // visible 클래스 추가
+  selectSite.classList.add('visible');
 });
 
-// 마우스가 siteCase 밖으로 나갈 때
 siteCase.addEventListener('mouseleave', () => {
-  selectSite.classList.remove('visible'); // visible 클래스 제거
+  selectSite.classList.remove('visible');
 });
