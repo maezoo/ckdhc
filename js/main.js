@@ -1,25 +1,19 @@
 // hamburgerPop==========================
 // ======================================
-$(document).ready(function () {
-  // 초기 상태 설정 ================
-  if ($(window).scrollTop() > 700) {
-    $('.sqa-btn').show();
-  } else {
-    $('.sqa-btn').hide();
-  }
 
+$(document).ready(function () {
   // scroll: sqa 버튼 보이기/숨기기, 팝업 닫기 =============
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 700) {
-      $('.sqa-btn').fadeIn(); // 버튼 나타나기
+    if ($(this).scrollTop() > 100) {
+      $('.sqa-wrapper').fadeIn(); // 버튼 나타나기
     } else {
-      $('.sqa-btn').fadeOut(); // 버튼 숨기기
+      $('.sqa-wrapper').fadeOut(); // 버튼 숨기기
     }
 
     // 팝업 close: scroll ================
     if ($('.hamburgerPop').hasClass('show')) {
       $('.hamburgerPop').removeClass('show');
-      $('.sqa-btn').animate({
+      $('.sqa-wrapper').animate({
         opacity: 1,
       }, 500);
     }
@@ -29,7 +23,7 @@ $(document).ready(function () {
   $('.close-x').click(function (e) {
     e.preventDefault(); // 기본 동작 방지
     $('.hamburgerPop').removeClass('show');
-    $('.sqa-btn').animate({
+    $('.sqa-wrapper').animate({
       opacity: 1,
     }, 500);
   });
@@ -37,7 +31,7 @@ $(document).ready(function () {
   // 팝업 open ==========================
   $('.sqa-btn').click(function () {
     $('.hamburgerPop').addClass('show');
-    $('.sqa-btn').animate({
+    $('.sqa-wrapper').animate({
       opacity: 0,
     }, 500);
   });
