@@ -1,6 +1,5 @@
 // hamburgerPop==========================
 // ======================================
-
 $(document).ready(function () {
   // scroll: sqa 버튼 보이기/숨기기, 팝업 닫기 =============
   $(window).scroll(function () {
@@ -36,26 +35,17 @@ $(document).ready(function () {
     }, 500);
   });
 });
-
+// ==============================
+// visual swiper =================
+var visualSwiper = new Swiper(".visualSwiper", {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  loop: true,
+});
 // ==============================
 // ==============================
-
-$(".blue-imgs").bxSlider({
-  mode: "horizontal",
-  pager: false,
-  controls: false,
-  auto: true,
-  speeSe: 500,
-  // speed: 500,
-  // slideWidth: 701,
-  // slideWidth: 715,
-  // slideMargin: 0,
-  // maxSlides: 1,
-  // minSlides: 1,
-  // moveSlides: 1,
-  infinitelLoop: true,
-})
-
 
 $(".slider").bxSlider({
   mode: "horizontal",
@@ -69,8 +59,7 @@ $(".slider").bxSlider({
 })
 
 // ===============================
-// banner=========================
-
+// banner ========================
 var banSwiper = new Swiper(".banSwiper", {
   loop: true,
   centeredSlides: true,
@@ -83,19 +72,18 @@ var banSwiper = new Swiper(".banSwiper", {
 });
 
 // ===============================
-// ===============================
+// product tab-1 swiper ============
 var tabSwiper = new Swiper(".tabSwiper", {
   navigation: {
     nextEl: ".tabSlide-btn-next",
     prevEl: ".tabSlide-btn-prev",
   },
-  loop: true, // 슬라이드 반복
-  slidesPerView: 'auto', // 슬라이드 너비를 자동으로 설정
-  spaceBetween: 30, // 슬라이드 간 간격
-  keyboard: true, // 키보드 네비게이션 활성화
-  direction: "horizontal", // 슬라이드 방향 설정 (가로)
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  keyboard: true,
+  direction: "horizontal",
 });
-
 // ===============================
 // product slide =================
 const tabLis = document.querySelectorAll('.tab-btn li');

@@ -3,42 +3,32 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
   <link rel="icon" href="/images/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>종근당건강 클론</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/styles/style.scss">
-
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/js/main.js" type="module"></script>
-  <!-- <script src="/js/slider.js" type="module"></script> -->
-
 </head>
 
 <body>
-
   <main>
-
     <div class="sqa-wrapper">
       <div class="sqa-btn">
-        <img src="images/fixed-btn.png" alt="fixed-btn">
+        <img src="images/hamburger.png" alt="btn">
       </div>
     </div>
-
     <div class="hamburgerPop">
       <div class="pop-inner">
         <div class="close-x">
-          <a href="#"><img src="images/fixed-btn2.png" alt="xxx"></a>
+          <a href="#"><img src="images/close-hamburger.png" alt="xxx"></a>
         </div>
         <ul class="pop-up">
           <li><a href="#">회사소개</a></li>
@@ -53,8 +43,6 @@
         </ul>
       </div>
     </div>
-
-
     <header class="header">
       <div class="header-inner">
         <div class="logo">
@@ -77,6 +65,7 @@
     </header>
     <section class="visual">
       <div class="vis-inner">
+        <!-- ================================= -->
         <div class="contents-wrapper">
           <div class="title-wrapper">
             <div class="title-1">
@@ -105,10 +94,8 @@
                   <p class="section-tit">Brand</p>
                   <p class="stat-num">1초</p>
                 </div>
-
                 <div class="mid-line">
                 </div>
-
                 <div class="subtitle">
                   <p>1초에 1통씩 팔리는</p>
                   <p>대표 브랜드, 락토핏</p>
@@ -119,47 +106,33 @@
                   <p class="section-tit">Sales</p>
                   <p class="stat-num">6155<span>억</span></p>
                 </div>
-
                 <div class="mid-line">
                 </div>
-
                 <div class="subtitle">
                   <p>2021년 12월 매출 기준</p>
                 </div>
-
-
               </div>
             </div>
           </div>
 
-          <!-- <div class="main-slider">
-            <img src="images/메인슬라이드블루.png" alt="블루">
-            <ul class="blue-imgs">
-              <li><img src="images/메인올앳미.png" alt="올앳미"></li>
-              <li><img src="images/메인락토핏.png" alt="락토핏"></li>
-              <li><img src="images/메인프로메가.png" alt="프로메가"></li>
-              <li><img src="images/메인아임비타.png" alt="아임비타"></li>
-              <li><img src="images/메인아이클리어.png" alt="아이클리어"></li>
-            </ul>
-          </div> -->
-
           <div class="main-slider">
-            <img class="slider-frame" src="images/메인슬라이드블루.png" alt="블루">
+            <div class="slider-cover">
+              <img class="slider-frame" src="images/visual-blue.png" alt="블루">
+            </div>
+            <div class="swiper visualSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/메인올앳미.png" alt="올앳미"></div>
+                <div class="swiper-slide"><img src="images/메인락토핏.png" alt="락토핏"></div>
+                <div class="swiper-slide"><img src="images/메인프로메가.png" alt="프로메가"></div>
+                <div class="swiper-slide"><img src="images/메인아임비타.png" alt="아임비타"></div>
+                <div class="swiper-slide"><img src="images/메인아이클리어.png" alt="아이클리어"></div>
+              </div>
+            </div>
 
-            <ul class="bxslider blue-imgs">
-              <li><img src="images/메인올앳미.png" alt="올앳미"></li>
-              <li><img src="images/메인락토핏.png" alt="락토핏"></li>
-              <li><img src="images/메인프로메가.png" alt="프로메가"></li>
-              <li><img src="images/메인아임비타.png" alt="아임비타"></li>
-              <li><img src="images/메인아이클리어.png" alt="아이클리어"></li>
-            </ul>
+
           </div>
 
-
-
-
-
-
+          <!-- ================================= -->
         </div>
 
       </div>
