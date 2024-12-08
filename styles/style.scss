@@ -27,28 +27,14 @@ a {
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  // font-weight: 600;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 main {
-  // width: 100vw;
-  height: 100vh;
-  // overflow-x: hidden;
-  // position: relative;
   width: 100%;
+  position: relative;
 }
-
-// =================================== 
-.hamburgerPop.show {
-  opacity: 1;
-  visibility: visible;
-
-  .pop-inner {
-    transform: translateX(0%);
-  }
-}
-
-// =================================== 
 
 .section-tit {
   display: flex;
@@ -66,9 +52,17 @@ main {
   }
 }
 
-// =================================== 
-/* jquery에서 추가할 클래스 */
-// =================================== 
+// ====================================
+// javascript, jquery =================
+
+.hamburgerPop.show {
+  opacity: 1;
+  visibility: visible;
+
+  .pop-inner {
+    transform: translateX(0%);
+  }
+}
 
 .tab-btn li.active {
   background-color: #005295;

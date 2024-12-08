@@ -185,7 +185,7 @@ var Lang = 'ko'; // ko,en,zh
 
 			<div class="brand-wrap tastyn-wrap">
 				<div class="tastyn-top">
-					<div class="img-logo"><img src="../../../images/pc/brand/img-tastyn-logo.png" alt="tastyn" /></div>
+					<div class="img-logo"><img src="///images/pc/brand/img-tastyn-logo.png" alt="tastyn" /></div>
 					<div class="container">
 						건강하면 맛이 없다는 당연함을 벗어나 
 						<strong>당신의 소중한 식탁을 먹는 즐거움으로 채웁니다.</strong>
@@ -199,7 +199,7 @@ var Lang = 'ko'; // ko,en,zh
 								
 							<p class="text"><strong>종근당건강의 전문성과 국내 영양 전문가 검증을 통해<br />체계적인 영양 설계를 제안합니다.</strong></p>
 						</div>
-						<img src="../../../images/pc/brand/img-tastyn-01.png" alt="BRAND STORY">
+						<img src="///images/pc/brand/img-tastyn-01.png" alt="BRAND STORY">
 					</div>
 				</div>
 				
@@ -211,17 +211,17 @@ var Lang = 'ko'; // ko,en,zh
 						</div>
 						<div class="content">
 							<div class="list-cont">
-								<img src="../../../images/pc/brand/img-tastyn-02-01.jpg" alt="">
+								<img src="///images/pc/brand/img-tastyn-02-01.jpg" alt="">
 								<strong class="text-name">신창호 쉐프<em class="tastyn">주옥 오너 쉐프, 요리연구가</em></strong>
 								<p class="text">한국의 식재료를 사용하여<br />한식의 단아함을 담아내는 레스토랑 주옥 오너 쉐프</p>
 							</div>
 							<div class="list-cont">
-								<img src="../../../images/pc/brand/img-tastyn-02-02.jpg" alt="">
+								<img src="///images/pc/brand/img-tastyn-02-02.jpg" alt="">
 								<strong class="text-name">강민구 쉐프<em class="tastyn">밍글스 오너 쉐프, 요리연구가</em></strong>
 								<p class="text">전통 한식을 새롭게 재해석하여 한식의 가능성을 다채로이 선보이는 레스토랑 밍글스 오너 쉐프</p>
 							</div>
 							<div class="list-cont">
-								<img src="../../../images/pc/brand/img-tastyn-02-03.jpg" alt="">
+								<img src="///images/pc/brand/img-tastyn-02-03.jpg" alt="">
 								<strong class="text-name">임경숙 교수<em class="tastyn">임상 영양학 박사</em></strong>
 								<p class="text">바른 영양과 식생활 관리의 중요성을 알리기 위해 활발하게 활동해온 영양 전문가</p>
 							</div>

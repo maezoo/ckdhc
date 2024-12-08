@@ -18,7 +18,7 @@
 
   .row-1 {
     height: 290px;
-    background: url(../images/종근당건강몰.jpg)no-repeat left center/120%;
+    background: url(/images/종근당건강몰.jpg)no-repeat left center/120%;
     position: relative;
 
     a {
@@ -110,20 +110,19 @@
   }
 
   .heal-bell {
-    background: url(../images/헬스벨스토리.jpg)no-repeat center;
+    background: url(/images/헬스벨스토리.jpg)no-repeat center;
     background-size: 386px 190px;
   }
 
   .heal-cosmetic {
-    background: url(../images/화장품2.jpg)no-repeat center;
+    background: url(/images/화장품2.jpg)no-repeat center;
     background-size: 386px 190px;
   }
 
   .heal-processed {
-    background: url(../images/가공식품.jpg)no-repeat center;
+    background: url(/images/가공식품.jpg)no-repeat center;
     background-size: 386px 190px;
   }
-
 }
 
 .arrow-box::after {
